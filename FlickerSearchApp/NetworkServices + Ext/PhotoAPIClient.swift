@@ -11,9 +11,9 @@ import Foundation
 struct PhotoAPIClient {
     static func getSearchResults(for search: String, completion: @escaping (Result<[Photo], AppError>) -> ()) {
         
-        let searchQuery = search.lowercased().addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? "dog"
+        let searchQuery = search.lowercased().addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
         
-        let endpointURL = " https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=\(Secrets.apiKey)&text=\(searchQuery)&radius=32&extras=url_m&per_page=&format=json&nojsoncallback=1"
+        let endpointURL = " https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=\(Secrets.apiKey)&text=\(searchQuery ?? "dog")&radius=32&extras=url_m&per_page=&format=json&nojsoncallback=1"
         
         guard let url = URL(string: endpointURL) else {
             completion(.failure(.badURL(endpointURL)))

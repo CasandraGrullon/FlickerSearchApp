@@ -20,7 +20,7 @@ class SearchViewController: UIViewController {
             }
         }
     }
-    var searchQuery = "" {
+    var searchQuery = "pizza" {
         didSet{
             loadSearch(for: searchQuery)
         }
@@ -28,8 +28,10 @@ class SearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadSearch(for: "pizza")
         searchBar.delegate = self
-        
+        tableView.dataSource = self
+        tableView.delegate = self
     }
 
     func loadSearch(for search: String){
@@ -48,9 +50,33 @@ class SearchViewController: UIViewController {
     }
 
 }
+extension SearchViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return photo.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "searchCell", for: indexPath) as? SearchCell else {
+            fatalError("search cell not working properly")
+        }
+        let searchResult = photo[indexPath.row]
+        cell.configureCell(for: searchResult)
+        return cell
+    }
+}
+
+extension SearchViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 180
+    }
+}
 
 extension SearchViewController: UISearchBarDelegate {
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        guard let searchText = searchBar.text else {
+            return
+        }
         searchQuery = searchText
     }
+
 }
