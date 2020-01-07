@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		C6BA9AAA23C52ED5001CC1B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA9AA923C52ED5001CC1B6 /* AppDelegate.swift */; };
 		C6BA9AAC23C52ED5001CC1B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA9AAB23C52ED5001CC1B6 /* SceneDelegate.swift */; };
-		C6BA9AAE23C52ED5001CC1B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA9AAD23C52ED5001CC1B6 /* ViewController.swift */; };
+		C6BA9AAE23C52ED5001CC1B6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA9AAD23C52ED5001CC1B6 /* SearchViewController.swift */; };
 		C6BA9AB123C52ED5001CC1B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BA9AAF23C52ED5001CC1B6 /* Main.storyboard */; };
 		C6BA9AB323C52ED7001CC1B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BA9AB223C52ED7001CC1B6 /* Assets.xcassets */; };
 		C6BA9AB623C52ED7001CC1B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BA9AB423C52ED7001CC1B6 /* LaunchScreen.storyboard */; };
@@ -19,6 +19,9 @@
 		C6BA9AD923C53179001CC1B6 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA9AD823C53179001CC1B6 /* NetworkHelper.swift */; };
 		C6BA9ADB23C531AA001CC1B6 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA9ADA23C531AA001CC1B6 /* AppError.swift */; };
 		C6BA9ADD23C531C9001CC1B6 /* PhotoAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA9ADC23C531C9001CC1B6 /* PhotoAPIClient.swift */; };
+		C6BA9ADF23C53403001CC1B6 /* ImageViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA9ADE23C53403001CC1B6 /* ImageViewExt.swift */; };
+		C6BA9AE123C53423001CC1B6 /* ShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA9AE023C53423001CC1B6 /* ShowAlert.swift */; };
+		C6BA9AE423C53A4B001CC1B6 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA9AE323C53A4B001CC1B6 /* SearchCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +38,7 @@
 		C6BA9AA623C52ED5001CC1B6 /* FlickerSearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickerSearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BA9AA923C52ED5001CC1B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6BA9AAB23C52ED5001CC1B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C6BA9AAD23C52ED5001CC1B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C6BA9AAD23C52ED5001CC1B6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C6BA9AB023C52ED5001CC1B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6BA9AB223C52ED7001CC1B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6BA9AB523C52ED7001CC1B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +51,9 @@
 		C6BA9AD823C53179001CC1B6 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		C6BA9ADA23C531AA001CC1B6 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		C6BA9ADC23C531C9001CC1B6 /* PhotoAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAPIClient.swift; sourceTree = "<group>"; };
+		C6BA9ADE23C53403001CC1B6 /* ImageViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExt.swift; sourceTree = "<group>"; };
+		C6BA9AE023C53423001CC1B6 /* ShowAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAlert.swift; sourceTree = "<group>"; };
+		C6BA9AE323C53A4B001CC1B6 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,7 @@
 				C6BA9AD123C52FB9001CC1B6 /* Secrets */,
 				C6BA9AD423C5307F001CC1B6 /* Model */,
 				C6BA9AAF23C52ED5001CC1B6 /* Main.storyboard */,
-				C6BA9AAD23C52ED5001CC1B6 /* ViewController.swift */,
+				C6BA9AE223C53A05001CC1B6 /* ViewControllers */,
 				C6BA9AB223C52ED7001CC1B6 /* Assets.xcassets */,
 				C6BA9AB423C52ED7001CC1B6 /* LaunchScreen.storyboard */,
 				C6BA9AB723C52ED7001CC1B6 /* Info.plist */,
@@ -133,9 +139,20 @@
 			children = (
 				C6BA9AD823C53179001CC1B6 /* NetworkHelper.swift */,
 				C6BA9ADA23C531AA001CC1B6 /* AppError.swift */,
+				C6BA9ADE23C53403001CC1B6 /* ImageViewExt.swift */,
+				C6BA9AE023C53423001CC1B6 /* ShowAlert.swift */,
 				C6BA9ADC23C531C9001CC1B6 /* PhotoAPIClient.swift */,
 			);
 			path = "NetworkServices + Ext";
+			sourceTree = "<group>";
+		};
+		C6BA9AE223C53A05001CC1B6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C6BA9AAD23C52ED5001CC1B6 /* SearchViewController.swift */,
+				C6BA9AE323C53A4B001CC1B6 /* SearchCell.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,10 +256,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6BA9AAE23C52ED5001CC1B6 /* ViewController.swift in Sources */,
+				C6BA9ADF23C53403001CC1B6 /* ImageViewExt.swift in Sources */,
+				C6BA9AE423C53A4B001CC1B6 /* SearchCell.swift in Sources */,
+				C6BA9AAE23C52ED5001CC1B6 /* SearchViewController.swift in Sources */,
 				C6BA9AD323C52FDD001CC1B6 /* Secrets.swift in Sources */,
 				C6BA9ADD23C531C9001CC1B6 /* PhotoAPIClient.swift in Sources */,
 				C6BA9AAA23C52ED5001CC1B6 /* AppDelegate.swift in Sources */,
+				C6BA9AE123C53423001CC1B6 /* ShowAlert.swift in Sources */,
 				C6BA9AD623C530D3001CC1B6 /* Flicker.swift in Sources */,
 				C6BA9AD923C53179001CC1B6 /* NetworkHelper.swift in Sources */,
 				C6BA9AAC23C52ED5001CC1B6 /* SceneDelegate.swift in Sources */,
