@@ -14,7 +14,6 @@
 		C6BA9AB323C52ED7001CC1B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BA9AB223C52ED7001CC1B6 /* Assets.xcassets */; };
 		C6BA9AB623C52ED7001CC1B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BA9AB423C52ED7001CC1B6 /* LaunchScreen.storyboard */; };
 		C6BA9AC123C52ED7001CC1B6 /* FlickerSearchAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA9AC023C52ED7001CC1B6 /* FlickerSearchAppTests.swift */; };
-		C6BA9ACF23C52F64001CC1B6 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA9ACE23C52F64001CC1B6 /* Secrets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +38,6 @@
 		C6BA9ABC23C52ED7001CC1B6 /* FlickerSearchAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickerSearchAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BA9AC023C52ED7001CC1B6 /* FlickerSearchAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerSearchAppTests.swift; sourceTree = "<group>"; };
 		C6BA9AC223C52ED7001CC1B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6BA9ACE23C52F64001CC1B6 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +81,6 @@
 			children = (
 				C6BA9AA923C52ED5001CC1B6 /* AppDelegate.swift */,
 				C6BA9AAB23C52ED5001CC1B6 /* SceneDelegate.swift */,
-				C6BA9AD023C52F67001CC1B6 /* Secrets */,
 				C6BA9AAD23C52ED5001CC1B6 /* ViewController.swift */,
 				C6BA9AAF23C52ED5001CC1B6 /* Main.storyboard */,
 				C6BA9AB223C52ED7001CC1B6 /* Assets.xcassets */,
@@ -100,14 +97,6 @@
 				C6BA9AC223C52ED7001CC1B6 /* Info.plist */,
 			);
 			path = FlickerSearchAppTests;
-			sourceTree = "<group>";
-		};
-		C6BA9AD023C52F67001CC1B6 /* Secrets */ = {
-			isa = PBXGroup;
-			children = (
-				C6BA9ACE23C52F64001CC1B6 /* Secrets.swift */,
-			);
-			path = Secrets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +201,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6BA9AAE23C52ED5001CC1B6 /* ViewController.swift in Sources */,
-				C6BA9ACF23C52F64001CC1B6 /* Secrets.swift in Sources */,
 				C6BA9AAA23C52ED5001CC1B6 /* AppDelegate.swift in Sources */,
 				C6BA9AAC23C52ED5001CC1B6 /* SceneDelegate.swift in Sources */,
 			);
